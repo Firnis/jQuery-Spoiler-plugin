@@ -53,7 +53,8 @@ module.exports = function(grunt) {
 			},
 			release: {
 				options: {
-					environment: 'production'
+					environment: 'production',
+					force: true
 				}
 			}
 		}
