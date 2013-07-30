@@ -1,0 +1,55 @@
+@import 'compass/css3/appearance';
+
+.spoiler {
+	margin:  0;
+	padding: 0;
+
+	.spoiler-check {
+		display:   inline;
+		position:  absolute;
+		left:      0;
+		top:       0;
+		font-size: 0;
+		height:    0;
+		width:     0;
+		margin:    0;
+		border:    0;
+		padding:   0;
+		outline:   0;
+		opacity:   0;
+		background: rgba(255,255,255,0.0);
+		visibility: hidden;
+
+		@include appearance(none);
+
+		&:checked ~ .spoiler-body {
+			display: block;
+		}
+
+		&:checked ~ .spoiler-open {
+			display: none;
+		}
+
+		&:checked ~ .spoiler-close {
+			display: block;
+		}
+	}
+
+	.spoiler-body {
+		display: none;
+	}
+
+	.spoiler-label {
+		cursor:  pointer;
+		padding: 0;
+		margin:  0;
+	}
+
+	.spoiler-close {
+		display: none;
+	}
+
+	.spoiler-open {
+		display: block;
+	}
+}

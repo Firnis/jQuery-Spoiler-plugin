@@ -1,0 +1,20 @@
+{
+  "name": "spoiler.jquery",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Firnis/jQuery-Spoiler-plugin.git"
+  },
+  "author": "Andrey Legchilin",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/Firnis/jQuery-Spoiler-plugin/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-copy": "~0.4.1"
+  }
+}
