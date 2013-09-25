@@ -4,10 +4,7 @@
 
 	$.fn.spoiler = function( options ) {
 		var defaultOptions = {
-			title: {
-				open:  "Open",
-				close: "Close"
-			},
+			title: "show",
 			prefix: 'spoiler'
 		};
 
@@ -24,14 +21,10 @@
 
 				check   = $('<input type="checkbox" id="' + id + '" class="' + prefix + '-check" />'),
 
-				label   = '<label for="' + id + '" class="' + prefix + '-label ' + prefix;
-
-				openLabel  = $(label + '-open">'  + options.title.open  + '</label>');
-
-				closeLabel = $(label + '-close">' + options.title.close + '</label>');
+				label   = $('<label for="' + id + '" class="' + prefix + '-label">' + options.title + '</label>');
 
 			me.before( spoiler );
-			spoiler.append(check, [openLabel, closeLabel, me]);
+			spoiler.append(check, [label, me]);
 		});
 	};
 })(window, jQuery);

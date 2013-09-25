@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="dist/css/spoiler.css">
+	</head>
+	<body>
+				<div class="spoiler">
+					<input type="checkbox" class="spoiler-check" id="example-spoiler" />
+					<label for="example-spoiler" class="spoiler-label">html example</label>
+
+					<div class="spoiler-body">
+						hidden text
+					</div>
+				</div>
+
+		<div id="js-example">
+			hidden text
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="dist/js/jquery.spoiler.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#js-example").spoiler({
+					title: "js example"
+				});
+			});
+		</script>
+	</body>
+</html>

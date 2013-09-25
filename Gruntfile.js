@@ -39,7 +39,6 @@ module.exports = function(grunt) {
 					src: 'src/js/<%= pkg.name %>.js',
 					dest: 'dist/js/<%= pkg.name %>.min.js'
 				}]
-
 			}
 		},
 		compass: {

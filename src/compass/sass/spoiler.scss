@@ -7,51 +7,46 @@ $prefix: 'spoiler';
 	padding: 0;
 
 	.#{$prefix}-check {
-		display:   inline;
-		position:  absolute;
-		left:      0;
-		top:       0;
+		display: inline;
+		position: absolute;
 		font-size: 0;
-		height:    0;
-		width:     0;
-		margin:    0;
-		border:    0;
-		padding:   0;
-		outline:   0;
-		opacity:   0;
-		background: rgba(255,255,255,0.0);
+		left:    0;
+		top:     0;
+		height:  0;
+		width:   0;
+		margin:  0;
+		border:  0;
+		padding: 0;
+		outline: 0;
+		opacity: 0;
+		background: rgba(255, 255, 255, 0);
 		visibility: hidden;
-
-		@include appearance(none);
+		@inlude appearance(none);
 
 		&:checked ~ .#{$prefix}-body {
 			display: block;
 		}
 
-		&:checked ~ .#{$prefix}-open {
-			display: none;
-		}
-
-		&:checked ~ .#{$prefix}-close {
-			display: block;
+		&:checked ~ .#{$prefix}-label:before {
+			content: "\2191";
 		}
 	}
 
 	.#{$prefix}-body {
 		display: none;
+		border:  1px solid #CCC;
+		padding: 5px;
 	}
 
 	.#{$prefix}-label {
-		cursor:  pointer;
+		cursor: pointer;
 		padding: 0;
 		margin:  0;
-	}
 
-	.#{$prefix}-close {
-		display: none;
-	}
-
-	.#{$prefix}-open {
-		display: block;
+		&:before {
+			content: "\2193";
+			margin-right: 3px;
+			@inlude inline-block(top);
+		}
 	}
 }

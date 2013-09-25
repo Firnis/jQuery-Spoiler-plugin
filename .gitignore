@@ -1,6 +1,4 @@
 .sass-cache/
 node_modules/
 .DS_Store
-dist/css/spoiler.css
-dist/js/spoiler.jquery.js
-dist/js/spoiler.jquery.min.js
+dist/*
