@@ -5,11 +5,13 @@ jQuery-Spoiler-plugin
 
  1. You need [Grunt](https://github.com/gruntjs/grunt/blob/master/README.md).
  2. Compile project.
+
 ```
  cd jquery-spoiler-plugin
  npm install
  grunt
 ```
+
  3. Copy content of dist directory to your project.
 
 ### jQuery plugin usage:
@@ -22,26 +24,22 @@ or
 
 ```
  $('.selector').spoiler({
-  title: {
-   open: "show",
-   close: "hide"
-  },
+  title: "title of the spoiler"
   prefix: 'my_css_prefix'
  });
 ```
 
-### Vanilla HTML:
+### Plain HTML:
 ```
  ...
  <link rel="stylesheet" href="spoiler.css">
  ...
- <div class="spoiler">
-  <input type="checkbox"  class="spoiler-check" id="my_spoiler" />
-  <label for="my_spoiler" class="spoiler-label spoiler-open">show</label>
-  <label for="my_spoiler" class="spoiler-label spoiler-close">hide</label>
-  
-  <div class="spoiler-body">
-   Text that should be spoiled
-  </div>
- </div>
+  <div class="spoiler">
+			<input type="checkbox" class="spoiler-check" id="example-spoiler" />
+			<label for="example-spoiler" class="spoiler-label">html example</label>
+
+			<div class="spoiler-body">
+				hidden text
+			</div>
+		</div>
 ```
